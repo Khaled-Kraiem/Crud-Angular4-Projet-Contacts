@@ -1,0 +1,21 @@
+<div class="container spacer">
+    <div class="card border-primary mb-3" style="max-width: 40rem;">
+        <div class="card-header">liste des contacts</div>
+            <div class="card-body text-info">
+             <table class="table table-striped">
+                 <tr>
+                     <th>ID</th>
+                     <th>Nom</th>
+                     <th>Prénom</th>
+                     <th>Email</th>
+                 </tr>
+                 <tr *ngFor="let c of pageContacts">
+                     <td>{{c.id}}</td>
+                     <td>{{c.nom}}</td>
+                     <td>{{c.prenom}}</td>
+                     <td>{{c.email}}</td>
+                 </tr>
+             </table>   
+            </div>
+    </div>
+</div>
